@@ -35,6 +35,10 @@ body{
   gap: 10px;
   list-style: none;
 }
+.navigation a{
+  text-decoration: none;
+  color: black;
+}
 .fight-contain{
   display: flex;
   align-items: center;
@@ -60,4 +64,12 @@ body{
 }
 .input-name p{
   margin: 0;
+}
+.person-contain{
+  display: flex;
+  padding: 1vh 1vw;
+}
+.person-data{
+  display: flex;
+  flex-direction: column;
 }
