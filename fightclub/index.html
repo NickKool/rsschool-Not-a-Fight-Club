@@ -11,13 +11,14 @@
     <link rel="icon" href="assets/icon.png">
 </head>
 <body>
-    <div class="start-contain">
-                <h3>Create Your Character</h3>
+<form class="start-contain" onsubmit="saveCharacter(event)">
+    <h3>Create Your Character</h3>
                 <div class="input-name">
                     <p>Character name</p>
-                    <input class="name" type="text">
+                    <input id="username" class="name" type="text" placeholder="Name" required>
                 </div>
-                <a class="button" href="index1.html"> Create Character </a> 
+                <input class="button" type="submit" value="Create Character">
+</form>
     </div>
     <script src="basic.js"></script>
 </body>
