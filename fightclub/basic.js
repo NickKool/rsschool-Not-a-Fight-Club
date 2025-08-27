@@ -10,7 +10,9 @@
   if (username) {
     document.getElementById("character").textContent = `${username}`;
   } 
-
+  if (window.location.pathname.includes("index.html") && username) {
+  window.location.href = "index1.html";
+  }
 
 const modal = document.getElementById("avatarModal");
 const playerAvatar = document.getElementById("playerAvatar");
