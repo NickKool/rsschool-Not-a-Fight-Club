@@ -1,20 +1,13 @@
-  function saveCharacter(event) {
-    event.preventDefault();
-    const username = document.getElementById("username").value;
-    localStorage.setItem("username", username);
-    window.location.href = "index1.html";
-  }
-
-  const username = localStorage.getItem("username");
-
-  if (username) {
-    document.getElementById("character").textContent = `${username}`;
-  } 
-
+const username = localStorage.getItem("username");
 const modal = document.getElementById("avatarModal");
 const playerAvatar = document.getElementById("playerAvatar");
 const span = modal.querySelector(".close");
 const avatars = document.querySelectorAll(".avatar");
+
+if (username) {
+  document.getElementById("character").textContent = `${username}`;
+} 
+
 
 playerAvatar.onclick = () => {
   modal.style.display = "flex";
