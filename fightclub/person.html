@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>not a fight club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon.png">
+</head>
+<body>
+    <div class="main-contain">
+            <div class="header">
+                <div class="logo">
+                    <a href="index1.html">
+                    <img src="assets/icon.png" alt="logo">
+                    </a>
+                </div>
+                <ul class="navigation">
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="person.html">Person</a></li>
+                    <li>Settings</li>
+                </ul>
+            </div>
+            <div class="person-contain">
+                <img id="playerAvatar" src="assets/avatar/1.jpg" alt="avatar">
+
+            <div id="avatarModal" class="modal">
+               <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Choose Your Avatar</h3>
+                  <div class="avatars">
+                    <img src="assets/avatar/1.jpg" class="avatar" alt="Avatar 1">
+                    <img src="assets/avatar/2.jpg" class="avatar" alt="Avatar 2">
+                    <img src="assets/avatar/3.jpg" class="avatar" alt="Avatar 3">
+                  </div>
+                </div>
+            </div>
+
+                <div class="person-data">
+                    <p id="character"></p>      
+                </div>
+            </div>
+    </div>
+    
+    <script src="person.js"></script>
+</body>
+</html>
